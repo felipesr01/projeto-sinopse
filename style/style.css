@@ -12,7 +12,8 @@
 }
 
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
 }
 
 header {
@@ -44,8 +45,10 @@ h2 {
 }
 
 h3 {
+    text-align: center;
+    background-color: black;
     font-size: 2em;
-    padding: 5px;
+    padding: 10px;
     font-family: var(--fonte1);
     color: red;
     text-indent: 10px;
@@ -56,7 +59,7 @@ section {
     padding-bottom: 8vh;
     padding-left: 30px;
     line-height: 2em;
-    background-color: gray;
+    background-color: rgb(32, 32, 32);
     font-family: var(--fonte2);
     font-size: 1.5em;
 }
@@ -64,12 +67,14 @@ section {
 section.sin {
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: inset 10px 10px 15px rgba(0, 0, 0, 0.418);
 }
 
 section.sin p{
     color: white;
     background-color: rgba(0, 0, 0, 0.342);
     padding: 5px;
+    margin-right: 10px;
     display: inline-block;
     text-indent: 15px;
     text-shadow: 1px 1px 3px rgb(0, 0, 0);
@@ -91,6 +96,10 @@ section.atores > p {
     justify-content: space-around
 }
 
+img.fator {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.39);
+    border-radius: 500px;
+}
 
 .fator {
     text-align: center;
@@ -98,9 +107,15 @@ section.atores > p {
     margin-right: 20px;
 }
 
+.nator {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
 .nator, .npersona {
     text-align: center;
-
+    color: white;
+    margin: -15px;
 }
 
 @media (max-width: 1000px) {
@@ -115,20 +130,28 @@ section.atores > p {
 
 section#inc {
     background-image: url(../imagens/fundo/inception.jpg);
-    background-position: bottom left;
+    background-position: center center;
+    background-size: cover;
 }
 
 section#int {
     background-image: url(../imagens/fundo/interstellar.jpg);
+    background-position: center center;
+    background-size: cover;
 }
 
 section#god {
     background-image: url(../imagens/fundo/poderoso-chefao.jpg);
+    background-position: center center;
+    background-size: cover;
 }
 
 section#hom {
     background-image: url(../imagens/fundo/homem-aranha.png);
+    background-position: center center;
+    background-size: cover;
 }
+
 
 footer {
     color: white;
